@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "user": "ana.dev",
+    "location": "São Paulo, Brasil",
+    "music": "Eminem, Mockingbird",
+    "avatar": "/images/avatars/ana.jpg",
+    "image": "/images/posts/mesaTrabalho.png",
+    "alt": "Mesa de trabalho com notebook e café",
+    "likes": 128,
+    "caption": "Construindo uma interface por vez. ✨"
+  },
+  {
+    "id": 2,
+    "user": "viajante",
+    "location": "Rio de Janeiro, Brasil",
+    "music": "Racionais MC's, Negro Drama",
+    "avatar": "/images/avatars/viajante.jpg",
+    "image": "/images/posts/favela.png",
+    "alt": "Paisagem de uma praia ao entardecer",
+    "likes": 342,
+    "caption": "Fim de tarde com vista para o mar."
+  },
+  {
+    "id": 3,
+    "user": "cafecomcodigo",
+    "location": "Curitiba, Brasil",
+    "music": "Hariel, Cracolândia",
+    "avatar": "/images/avatars/cafe.jpg",
+    "image": "/images/posts/programando.png",
+    "alt": "Xícara de café ao lado de um teclado",
+    "likes": 87,
+    "caption": "Qual é a sua trilha sonora para programar?"
+  }
+]
