@@ -31,5 +31,38 @@
     "alt": "Xícara de café ao lado de um teclado",
     "likes": 87,
     "caption": "Qual é a sua trilha sonora para programar?"
+  },
+{
+    "id": 4,
+    "user": "marina.codes",
+    "location": "São Paulo, Brasil",
+    "music": "The Weeknd, Blinding Lights",
+    "avatar": "/images/avatars/ana.jpg",
+    "image": "/images/posts/mesaTrabalho.png",
+    "alt": "Mesa de trabalho com notebook e café",
+    "likes": 128,
+    "caption": "Um passo de cada vez. Hoje, mais uma ideia virou código. 💻✨"
+  },
+  {
+    "id": 5,
+    "user": "leo.nomundo",
+    "location": "Lisboa, Portugal",
+    "music": "Coldplay, Adventure of a Lifetime",
+    "avatar": "/images/avatars/viajante.jpg",
+    "image": "/images/posts/favela.png",
+    "alt": "Paisagem de uma praia ao entardecer",
+    "likes": 342,
+    "caption": "O mundo é grande demais para ficar sempre no mesmo lugar. 🌍✈️"
+  },
+  {
+    "id": 6,
+    "user": "bia.criativa",
+    "location": "Curitiba, Brasil",
+    "music": "Emicida, AmarElo",
+    "avatar": "/images/avatars/cafe.jpg",
+    "image": "/images/posts/programando.png",
+    "alt": "Xícara de café ao lado de um teclado",
+    "likes": 87,
+    "caption": "Transformando ideias em projetos e sonhos em planos. 🎨🚀"
   }
 ]
