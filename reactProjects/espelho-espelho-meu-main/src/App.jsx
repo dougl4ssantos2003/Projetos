@@ -18,11 +18,11 @@ function App() {
         </main>
       </div>
       <nav className="mobile-nav" aria-label="Navegação móvel">
-        <button type="button" aria-label="Início"><FiHome /></button>
-        <button type="button" aria-label="Pesquisar"><FiSearch /></button>
-        <button type="button" aria-label="Criar publicação"><FiPlusSquare /></button>
-        <button type="button" aria-label="Atividades"><FiHeart /></button>
-        <button type="button" aria-label="Perfil"><FiUser /></button>
+        <button className="icon-button" type="button" aria-label="Início"><FiHome /></button>
+        <button className="icon-button" type="button" aria-label="Pesquisar"><FiSearch /></button>
+        <button className="icon-button" type="button" aria-label="Criar publicação"><FiPlusSquare /></button>
+        <button className="icon-button" type="button" aria-label="Atividades"><FiHeart /></button>
+        <button className="icon-button" type="button" aria-label="Perfil"><FiUser /></button>
       </nav>
     </div>
   )

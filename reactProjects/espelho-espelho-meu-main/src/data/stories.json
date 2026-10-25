@@ -1,0 +1,48 @@
+
+[
+  {
+    "id": 1,
+    "user": "Você",
+    "avatar": "/images/perfil/Face.jpeg",
+    "medias": [
+      "/images/perfil/Face.jpeg",
+      "/images/perfil/Face%20(1).jpeg"
+    ]
+  },
+  {
+    "id": 2,
+    "user": "marina.codes",
+    "avatar": "/images/perfil/Face%20(3).jpeg",
+    "medias": [
+      "/images/perfil/Face%20(3).jpeg",
+      "/images/perfil/Face%20(4).jpeg"
+    ]
+  },
+  {
+    "id": 3,
+    "user": "leo.nomundo",
+    "avatar": "/images/perfil/Face%20(2).jpeg",
+    "medias": [
+      "/images/perfil/Face%20(2).jpeg",
+      "/images/perfil/Face.jpeg"
+    ]
+  },
+  {
+    "id": 4,
+    "user": "bia.criativa",
+    "avatar": "/images/perfil/Face%20(4).jpeg",
+    "medias": [
+      "/images/perfil/Face%20(4).jpeg",
+      "/images/perfil/Face%20(1).jpeg"
+    ]
+  },
+  {
+    "id": 5,
+    "user": "viajante",
+    "avatar": "/images/perfil/Face%20(1).jpeg",
+    "medias": [
+      "/images/perfil/Face%20(1).jpeg",
+      "/images/perfil/Face%20(2).jpeg"
+    ]
+  }
+]

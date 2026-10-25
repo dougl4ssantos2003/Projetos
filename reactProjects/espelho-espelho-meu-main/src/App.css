@@ -176,20 +176,58 @@
         display: none;
     }
 
+
     .mobile-nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        gap: 8px;
+
         position: fixed;
         bottom: 0;
         left: 0;
-        right: 0;
-        height: 56px;
-        background: #fff;
-        border-top: 1px solid #dbdbdb;
-        z-index: 1;
+        width: 100%;
+        height: 64px;
+        padding: 0 12px;
+        box-sizing: border-box;
+
+        background: #ffffff;
+        border-top: 1px solid #e9e2f3;
+        box-shadow: 0 -4px 16px rgba(80, 40, 120, 0.06);
+
+        z-index: 1000;
     }
-    
+
+    .mobile-nav button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+        padding: 0;
+
+        border: none;
+        border-radius: 12px;
+        background: transparent;
+        color: #4b3b63;
+
+        cursor: pointer;
+        transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .mobile-nav button svg {
+        width: 24px;
+        height: 24px;
+        stroke-width: 1.8;
+    }
+
+    .mobile-nav button:active {
+        background: #eee6f7;
+        color: #7c3aed;
+    }
+
+
     .post__header {
         padding: 10px 12px;
     }
@@ -458,4 +496,172 @@
 
 .sidebar__item--active svg {
     stroke-width: 2.5;
+}
+
+
+.header__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__brand .header__logo {
+    margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    background: linear-gradient(45deg, #6d28d9, #9333ea);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: #7c3aed;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.story {
+    padding: 0;
+    border: none;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+}
+
+.story:focus-visible {
+    outline: 2px solid #7c3aed;
+    outline-offset: 4px;
+    border-radius: 12px;
+}
+
+.story-viewer {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(15, 10, 25, 0.96);
+}
+
+.story-viewer__close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 38px;
+    cursor: pointer;
+}
+
+.story-viewer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    width: min(90vw, 420px);
+    color: white;
+}
+
+.story-viewer__content img {
+    width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.story-viewer__content span {
+    font-weight: 600;
+}
+
+.story-viewer__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.story-viewer__nav:hover {
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.story-viewer__nav--prev {
+    left: 20px;
+}
+
+.story-viewer__nav--next {
+    right: 20px;
+}
+
+.story-viewer__progress {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    display: flex;
+    gap: 4px;
+    z-index: 2;
+}
+
+.story-viewer__progress-track {
+    flex: 1;
+    height: 4px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+
+.story-viewer__progress-fill {
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.story-viewer__progress-fill--active {
+    width: 100%;
+    animation: story-progress 5s linear;
+}
+
+.story-viewer__progress-fill--complete {
+    width: 100%;
+    animation: none;
+}
+
+@keyframes story-progress {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }

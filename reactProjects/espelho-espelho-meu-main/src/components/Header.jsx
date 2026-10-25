@@ -1,27 +1,24 @@
-import { FiHeart, FiHome, FiPlusSquare, FiSearch } from 'react-icons/fi'
-import { SocialIcon } from 'react-social-icons'
-import  'react-social-icons/instagram' 
 
+import { FiInstagram } from 'react-icons/fi'
 
 function Header() {
   return (
     <header className="header">
-      <SocialIcon  borderRadius = "5px" url='www.instagram.com'/>
-      <span className="header__logo">Gossiping</span>
-      <nav className="header__actions" aria-label="Navegação principal">
-        <button className="icon-button" type="button" aria-label="Início">
-          <FiHome />
-        </button>
-        <button className="icon-button" type="button" aria-label="Pesquisar">
-          <FiSearch />
-        </button>
-        <button className="icon-button" type="button" aria-label="Criar publicação">
-          <FiPlusSquare />
-        </button>
-        <button className="icon-button" type="button" aria-label="Atividades">
-          <FiHeart />
-        </button>
-      </nav>
+      <div className="header__brand">
+        <div className="header__icon">
+          <a
+            href="http://localhost:5173/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header__icon"
+            aria-label="Visitar meu site"
+          >
+            <FiInstagram />
+          </a>
+        </div>
+
+        <span className="header__logo">Gossiping</span>
+      </div>
     </header>
   )
 }
